@@ -1,0 +1,151 @@
+/* ===== Testimonials Page ===== */
+
+.testimonials-section {
+  padding: 80px 8%;
+  background: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ---- Tag / Label ---- */
+.testimonials-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2563eb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* ---- Heading ---- */
+.testimonials-heading {
+  font-size: 36px;
+  color: #111827;
+  margin: 8px 0 16px;
+}
+
+/* ---- Subtitle ---- */
+.testimonials-subtitle {
+  font-size: 17px;
+  color: #6b7280;
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 1.7;
+}
+
+/* ---- Grid ---- */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ---- Card ---- */
+.testimonial-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #2563eb;
+  border-radius: 12px;
+  padding: 32px 28px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.2);
+}
+
+/* ---- Quote Icon ---- */
+.testimonial-quote-icon {
+  font-size: 40px;
+  color: #2563eb;
+  line-height: 1;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* ---- Testimonial Text ---- */
+.testimonial-text {
+  font-size: 15px;
+  font-style: italic;
+  color: #4b5563;
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+/* ---- Stars ---- */
+.testimonial-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 16px;
+}
+
+.star {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.star.empty {
+  opacity: 0.3;
+  filter: grayscale(1);
+}
+
+/* ---- Student Name ---- */
+.testimonial-name {
+  font-size: 17px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0 0 4px;
+}
+
+/* ---- Course ---- */
+.testimonial-course {
+  font-size: 14px;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 6%;
+  }
+
+  .testimonials-heading {
+    font-size: 28px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 24px 20px;
+  }
+
+  .testimonials-heading {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,144 @@
+/* ===== Services Page ===== */
+
+.services-section {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* --- Header --- */
+.services-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2563eb;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.services-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #111827;
+  margin: 0 0 16px;
+  line-height: 1.2;
+}
+
+.services-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* --- Card Grid --- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* --- Service Card --- */
+.service-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(37, 99, 235, 0.2);
+  border-color: #93c5fd;
+}
+
+.service-icon {
+  font-size: 44px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 12px;
+}
+
+.service-description {
+  font-size: 15px;
+  color: #4b5563;
+  line-height: 1.7;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.service-link {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.service-link:hover {
+  color: #1d4ed8;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 6%;
+  }
+
+  .services-heading {
+    font-size: 32px;
+  }
+
+  .services-subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-section {
+    padding: 48px 5%;
+  }
+
+  .services-heading {
+    font-size: 28px;
+  }
+
+  .service-card {
+    padding: 28px 22px;
+  }
+}
